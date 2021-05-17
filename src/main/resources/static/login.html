@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/u/login" method="POST">
+    <!--注意：页面提交方式必须为 post 请求，用户名，密码必须为username,password
+    可以通过 usernameParameter()和 passwordParameter()方法修改默认配置-->
+    用户名：<input type="text" name="username">
+    <br/>
+    用户名：<input type="text" name="password">
+    <br/>
+    <!--name 属性值必须位 remember-me.不能改为其他值-->
+    记住我：<input type="checkbox" name="remember-me" title="记住密码"/><br/>
+
+    <input type="submit" value="login">
+
+</form>
+</body>
+</html>
